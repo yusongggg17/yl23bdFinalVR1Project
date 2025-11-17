@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -7,12 +9,23 @@ public class HoldWithProgressBar : MonoBehaviour
 {
     public XRGrabInteractable interactable;
     public float holdTime = 2f;
-    public GameObject thingToShow;
+    public GameObject[] ingredientsPrefab;
+    private int numTotalIngredients;
+    List<GameObject> spawnedIngredients = new List<GameObject>();
+
     public Slider progressBar;
 
     private float holdTimer = 0f;
     private bool isHolding = false;
     private bool triggered = false;
+
+    private void Start()
+    {
+        numTotalIngredients = ingredientsPrefab.Length;
+        if(interactable == null) Debug.LogError("Interactable is NULL");
+        if (progressBar == null) Debug.LogError("Progress bar is NULL");
+        if (ingredientsPrefab == null || ingredientsPrefab.Length == 0) Debug.LogError("IngredientsPrefab array is EMPTY");
+    }
 
     private void OnEnable()
     {
@@ -60,7 +73,15 @@ public class HoldWithProgressBar : MonoBehaviour
     {
         triggered = true;
         progressBar.gameObject.SetActive(false);
-        thingToShow.SetActive(true);
+        ShowRandomIngredient();
         Debug.Log("Hold complete — action triggered!");
+    }
+
+    private void ShowRandomIngredient() {
+        int randomIndex= Random.Range(0, numTotalIngredients);
+        Vector3 spawnPos = new Vector3(Random.Range(35.5f, 37f),0,Random.Range(57.5f, 58.5f));
+        GameObject clone =Instantiate(ingredientsPrefab[randomIndex], spawnPos, Quaternion.identity);
+        spawnedIngredients.Add(clone);
+        Debug.Log("random ingredient spawned");
     }
 }
