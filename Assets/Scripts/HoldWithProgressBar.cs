@@ -79,7 +79,7 @@ public class HoldWithProgressBar : MonoBehaviour
 
     private void ShowRandomIngredient() {
         int randomIndex= Random.Range(0, numTotalIngredients);
-        Vector3 spawnPos = new Vector3(Random.Range(35.5f, 37f),0,Random.Range(57.5f, 58.5f));
+        Vector3 spawnPos = new Vector3(Random.Range(39.3f, 42f),0.5f,Random.Range(57f, 60f));
         GameObject clone =Instantiate(ingredientsPrefab[randomIndex], spawnPos, Quaternion.identity);
         spawnedIngredients.Add(clone);
         Debug.Log("random ingredient spawned");
