@@ -102,7 +102,7 @@ PrefabInstance:
       addedObject: {fileID: -6447737815629524845}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 648205454243d1a4fb8b4abf09eb3344, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -4563893696163764978}
+      addedObject: {fileID: 5892345077698201472}
   m_SourcePrefab: {fileID: 100100000, guid: 648205454243d1a4fb8b4abf09eb3344, type: 3}
 --- !u!1 &438674941618567121 stripped
 GameObject:
@@ -135,7 +135,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &-6447737815629524845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!65 &-4563893696163764978
+--- !u!65 &5892345077698201472
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,8 +282,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.29244798, y: 0.04037828, z: 0.14622399}
-  m_Center: {x: 0, y: 0.01355486, z: 0}
+  m_Size: {x: 0.29244798, y: 0.043420997, z: 0.14622399}
+  m_Center: {x: 0, y: 0.016079219, z: 0}
 --- !u!4 &963115172820053355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 648205454243d1a4fb8b4abf09eb3344, type: 3}

@@ -12,6 +12,9 @@ TagManager:
   - Pie
   - Chocolate
   - Icecream
+  - Deer
+  - Chicken
+  - Cat
   layers:
   - Default
   - TransparentFX

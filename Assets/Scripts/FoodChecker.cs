@@ -23,14 +23,6 @@ public class FoodChecker : MonoBehaviour
             if (animal.currentDialogue == 0)
             {
                 CheckOneFood(food, "Nut");
-                /*if (CheckChildTag(food, "Nut"))
-                {
-                    animal.CorrectDialogue();
-                }
-                else
-                {
-                    animal.WrongDialogue();
-                }*/
             }
             else if (animal.currentDialogue == 1)
             {
@@ -42,9 +34,10 @@ public class FoodChecker : MonoBehaviour
             }
         }
         else if (animal.currentAnimal.tag == "Deer") {
+            Debug.Log("Current Animal is deer");
             if (animal.currentDialogue == 0)
             {
-
+                CheckOneFood(food, "Chocolate");
             }
             else if (animal.currentDialogue == 1)
             {
