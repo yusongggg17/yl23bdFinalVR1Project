@@ -22,14 +22,15 @@ public class FoodChecker : MonoBehaviour
         {
             if (animal.currentDialogue == 0)
             {
-                if (CheckChildTag(food, "Nut"))
+                CheckOneFood(food, "Nut");
+                /*if (CheckChildTag(food, "Nut"))
                 {
                     animal.CorrectDialogue();
                 }
                 else
                 {
                     animal.WrongDialogue();
-                }
+                }*/
             }
             else if (animal.currentDialogue == 1)
             {
@@ -97,6 +98,18 @@ public class FoodChecker : MonoBehaviour
         //    animal.WrongDialogue();
         //}
 
+    }
+
+    private void CheckOneFood(GameObject food, string targetFood) {
+
+        if (CheckChildTag(food, targetFood))
+        {
+            animal.CorrectDialogue();
+        }
+        else
+        {
+            animal.WrongDialogue();
+        }
     }
 
 }
