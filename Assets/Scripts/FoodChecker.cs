@@ -7,6 +7,8 @@ public class FoodChecker : MonoBehaviour
     public DialogueManager animal;
     private string PenguinFood1Tag="";
     private string DeerFood1Tag = "";
+    private string CatFood1Tag = "";
+    private string ChickenFood1Tag = "";
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnCollisionEnter(Collision collision)
     {
@@ -34,17 +36,32 @@ public class FoodChecker : MonoBehaviour
             }
         }
         else if (animal.currentAnimal.tag == "Deer") {
-            Debug.Log("Current Animal is deer");
             if (animal.currentDialogue == 0)
             {
-                CheckOneFood(food, "Chocolate");
+                CheckTwoFood(food, "Pumpkin", "Pie", ref DeerFood1Tag);
             }
             else if (animal.currentDialogue == 1)
             {
-
+                CheckOneFood(food, "Chocolate");
             }
             else if (animal.currentDialogue == 2)
             {
+                CheckOneFood(food, "Chocolate");
+            }
+        }
+        else if (animal.currentAnimal.tag == "Cat")
+        {
+            if (animal.currentDialogue == 0)
+            {
+                CheckOneFood(food, "Utencil");
+            }
+            else if (animal.currentDialogue == 1)
+            {
+                CheckTwoFood(food, "Pineapple", "Pizza", ref CatFood1Tag);
+            }
+            else if (animal.currentDialogue == 2)
+            {
+                CheckTwoFood(food, "Pineapple", "Icecream", ref CatFood1Tag);
             }
         }
         Destroy(food);

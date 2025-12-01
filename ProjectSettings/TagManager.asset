@@ -15,6 +15,12 @@ TagManager:
   - Deer
   - Chicken
   - Cat
+  - Pumpkin
+  - Donut
+  - Banana
+  - Pizza
+  - Pineapple
+  - Utencil
   layers:
   - Default
   - TransparentFX
