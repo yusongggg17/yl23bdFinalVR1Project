@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
     [Header("Dialogues")]
     [TextArea(2, 5)]
     public string[] dialogues;
+    public GameObject currentAnimal;
+    public int currentDialogue;
 
     [Header("XR Canvas & Text")]
     public Canvas dialogueCanvas;        // XR Canvas
@@ -40,7 +42,8 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = "No dialogue found.";
         }
-        else {
+        else
+        {
             ShowRandomDialogue();
         }
     }
@@ -49,8 +52,22 @@ public class DialogueManager : MonoBehaviour
     {
 
         dialogueText.text = dialogues[countDiaglogue];
+        currentDialogue = countDiaglogue;
         countDiaglogue++;
 
         dialogueCanvas.enabled = true;
+    }
+
+    public void CorrectDialogue()
+    {
+        dialogueText.text = "Thank you! This is great!";
+    }
+    public void WrongDialogue()
+    {
+        dialogueText.text = "Sorry, I don't want this...";
+    }
+    public void RequireAdditionalDialogue()
+    {
+        dialogueText.text = "Thank you! I'm still waiting on another thing.";
     }
 }
