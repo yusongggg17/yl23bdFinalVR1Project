@@ -28,7 +28,7 @@ public class FoodChecker : MonoBehaviour
             }
             else if (animal.currentDialogue == 1)
             {
-                CheckTwoFood(food, "Apple", "Pie", ref PenguinFood1Tag);
+                CheckTwoFood(food, "Fall", "Pie", ref PenguinFood1Tag);
             }
             else if (animal.currentDialogue == 2)
             {
@@ -38,15 +38,15 @@ public class FoodChecker : MonoBehaviour
         else if (animal.currentAnimal.tag == "Deer") {
             if (animal.currentDialogue == 0)
             {
-                CheckTwoFood(food, "Pumpkin", "Pie", ref DeerFood1Tag);
+                CheckOneFood(food, "Tropical");
             }
             else if (animal.currentDialogue == 1)
             {
-                CheckOneFood(food, "Chocolate");
+                CheckTwoFood(food, "Donut", "Nut", ref DeerFood1Tag);
             }
             else if (animal.currentDialogue == 2)
             {
-                CheckOneFood(food, "Chocolate");
+                animal.CorrectDialogue();
             }
         }
         else if (animal.currentAnimal.tag == "Cat")
@@ -61,7 +61,22 @@ public class FoodChecker : MonoBehaviour
             }
             else if (animal.currentDialogue == 2)
             {
-                CheckTwoFood(food, "Pineapple", "Icecream", ref CatFood1Tag);
+                CheckTwoFood(food, "Apple", "Chocolate", ref CatFood1Tag);
+            }
+        }
+        else if (animal.currentAnimal.tag == "Chicken")
+        {
+            if (animal.currentDialogue == 0)
+            {
+                CheckTwoFood(food, "Donut", "Chocolate", ref ChickenFood1Tag);
+            }
+            else if (animal.currentDialogue == 1)
+            {
+                CheckTwoFood(food, "Banana", "Pizza", ref ChickenFood1Tag);
+            }
+            else if (animal.currentDialogue == 2)
+            {
+                animal.CorrectDialogue();
             }
         }
         Destroy(food);

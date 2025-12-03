@@ -21,6 +21,8 @@ TagManager:
   - Pizza
   - Pineapple
   - Utencil
+  - Fall
+  - Tropical
   layers:
   - Default
   - TransparentFX

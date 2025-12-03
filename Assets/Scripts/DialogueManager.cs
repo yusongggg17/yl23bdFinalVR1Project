@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject currentAnimal;
     public int currentDialogue;
     private bool currentComplete = true;
+    private int countCorrect = 0;   //this is probably not the best way to fix the problem where on the last quest you can click through to the “im full dialogue” but ykw
 
     [Header("XR Canvas & Text")]
     public Canvas dialogueCanvas;        // XR Canvas
@@ -25,7 +26,7 @@ public class DialogueManager : MonoBehaviour
         interactable.selectEntered.AddListener(OnInteract);
 
         if (dialogueCanvas != null)
-            dialogueCanvas.enabled = false;  // start hidden
+            dialogueCanvas.enabled = false; 
     }
 
     private void Start()
@@ -35,7 +36,7 @@ public class DialogueManager : MonoBehaviour
 
     private void OnInteract(SelectEnterEventArgs args)
     {
-        if (countDiaglogue >= dialogues.Length)
+        if (countCorrect>=3)
         {
             dialogueText.text = "Thank you! I am full!";
         }
@@ -67,6 +68,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueText.text = "Thank you! This is great!";
         currentComplete = true;
+        countCorrect++;
     }
     public void WrongDialogue()
     {

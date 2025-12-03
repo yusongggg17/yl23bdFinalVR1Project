@@ -3482,7 +3482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1dcd67acfb5747b4a98516447dc7272f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.101036295
+      value: 0.0811
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1dcd67acfb5747b4a98516447dc7272f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4061,15 +4061,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.55730176
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.118182
+      value: 0.76243997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.55730176
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4077,7 +4077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0821
+      value: 0.0662
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4113,7 +4113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9555835e12aec9f418936e0d414af011, type: 3}
       propertyPath: m_Name
@@ -5296,8 +5296,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogues:
   - Utencil
-  - pineapple pizza
-  - pineapple icecream
+  - Pineapple pizza is the best.
+  - A dessert/candy that you often eat during Christmas
   currentAnimal: {fileID: 972075268}
   currentDialogue: 0
   dialogueCanvas: {fileID: 470141695}
@@ -7506,6 +7506,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 638766354157421648, guid: fa736864a18c5634791165d2b8c3a86d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1520344605707324932, guid: fa736864a18c5634791165d2b8c3a86d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -7554,7 +7558,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: plate
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1520344605707324932, guid: fa736864a18c5634791165d2b8c3a86d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8299,7 +8304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1dcd67acfb5747b4a98516447dc7272f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.10323
+      value: 0.0833
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1dcd67acfb5747b4a98516447dc7272f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10001,9 +10006,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogues:
-  - Nut
-  - Apple and Pie
-  - Chocolate and Icecream
+  - I want to try your favorite food!
+  - I want a pie that gives fall vibes!
+  - I want a chocolate flavored desert, preferably cold!
   currentAnimal: {fileID: 1129291280}
   currentDialogue: 0
   dialogueCanvas: {fileID: 1008619089}
@@ -10441,9 +10446,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogues:
-  - Pumpkin pie
-  - Chocolate
-  - Chocolate
+  - I want to try some tropical fruits!
+  - Dough nut
+  - IDK anything
   currentAnimal: {fileID: 859237184}
   currentDialogue: 0
   dialogueCanvas: {fileID: 859084745}
@@ -10809,7 +10814,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b1af01f07731944bf9c3098b6ed257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - Quiero una dona de chocolate
+  - "Je veux une pizza \xE0 la banane"
+  - "(-\u221E. \u221E)"
   currentAnimal: {fileID: 1011522248}
   currentDialogue: 0
   dialogueCanvas: {fileID: 516241510}
@@ -11682,23 +11690,23 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c3474c208278e814cb8d1c29aa806e81, type: 2}
     - target: {fileID: 4114240291336320442, guid: 8a098adfa465d8647b5e6033b1b659cd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.0022253129
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 4114240291336320442, guid: 8a098adfa465d8647b5e6033b1b659cd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0044649136
+      value: 0.003009631
       objectReference: {fileID: 0}
     - target: {fileID: 4114240291336320442, guid: 8a098adfa465d8647b5e6033b1b659cd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0022253129
+      value: 0.0015
       objectReference: {fileID: 0}
     - target: {fileID: 4114240291336320442, guid: 8a098adfa465d8647b5e6033b1b659cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.047
+      value: -0.04745
       objectReference: {fileID: 0}
     - target: {fileID: 4114240291336320442, guid: 8a098adfa465d8647b5e6033b1b659cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.08818205
+      value: 0.0733
       objectReference: {fileID: 0}
     - target: {fileID: 4114240291336320442, guid: 8a098adfa465d8647b5e6033b1b659cd, type: 3}
       propertyPath: m_LocalPosition.z
