@@ -24,4 +24,8 @@ What was a key challenge you overcame or an element of the project you're partic
 - I am proud that I came up with the food checking algortithm that checks the tags of the food gameobjects and its children's tags, so that you can put many identifiers for each food, and it allows me to easily add more possible answers for each questions in the future.
 Screenshots of my project
 <img width="1919" height="987" alt="image" src="https://github.com/user-attachments/assets/69c409b5-a005-4089-a94a-c2d0202240e6" />
+<img width="1173" height="683" alt="image" src="https://github.com/user-attachments/assets/116d79bb-1863-4f80-ac29-eb8ad322a149" />
+<img width="1152" height="644" alt="image" src="https://github.com/user-attachments/assets/57b733c4-ec3b-426b-abd7-e10e03849466" />
+
+
 
