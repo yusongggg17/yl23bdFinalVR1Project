@@ -16,4 +16,12 @@ Chef hat: https://skfb.ly/oPoKC
 Chef knife:https://skfb.ly/6Y9FN
 hook:https://skfb.ly/6ZxuL
 
+What's your project all about?
+- The player acts as a squirrel chef, preparing food for the animals in the forest. The animals have certain requests, and the player needs to dig around in the dirt and sands (like a squirrel) to find the food that they stored.
+What was the additional skill you worked on?
+- I worked on my coding skill, I wrote scripts to make the game functional and playable. I also created a 3D blender asset for the sand hill.
+What was a key challenge you overcame or an element of the project you're particularly proud of/want to highlight.
+- I am proud that I came up with the food checking algortithm that checks the tags of the food gameobjects and its children's tags, so that you can put many identifiers for each food, and it allows me to easily add more possible answers for each questions in the future.
+Screenshots of my project
+<img width="1919" height="987" alt="image" src="https://github.com/user-attachments/assets/69c409b5-a005-4089-a94a-c2d0202240e6" />
 
